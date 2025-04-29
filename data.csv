@@ -20,6 +20,7 @@ id,text,link,category
 19,HTML,,skills
 20,CSS,,skills
 21,Flask,,skills
+22,PyGame,,skills
 22,Test Ruffier,https://github.com/sssdenkasss/ruffier-2.git,projects
 23,minecraft,https://github.com/sssdenkasss/luchik_mainkrafter,projects
 24,shooter,https://github.com/sssdenkasss/shooter-the-end,projects

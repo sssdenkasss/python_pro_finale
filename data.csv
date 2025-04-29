@@ -1,0 +1,33 @@
+id,text,link,category
+1,Denys Luchko,,name
+2,3D Game Developer,,position
+3,d_work@gmail.com,,contacts
+4,380988766789,,contacts
+5,"Полтава, Україна, також віддалено",,contacts
+6,telegram,https://t.me/sssdankas,contacts
+7,facebook,https://www.facebook.com/denis.luchko.52,contacts
+8,I am an aspiring Data Analyst with a strong commitment to continuous skill enhancement and growth in the data field.,,summary
+9,Python3,,skills
+10,OOP,,skills
+11,Kivy,,skills
+12,Pandas,,skills
+13,Matplotlib,,skills
+14,Panda3D,,skills
+15,Web design,,skills
+16,3-D modelling,,skills
+17,2-D design,,skills
+18,sklearn,,skills
+19,HTML,,skills
+20,CSS,,skills
+21,Flask,,skills
+22,Test Ruffier,https://github.com/sssdenkasss/ruffier-2.git,projects
+23,minecraft,https://github.com/sssdenkasss/luchik_mainkrafter,projects
+24,shooter,https://github.com/sssdenkasss/shooter-the-end,projects
+25,I am finishing 8 years old of Poltava secondary school N 28.,,education
+26,Python Start Course - Logika (2022 - 2024),,education
+27,Python Pro Course - Logika(2024-2025),,education
+28,I took 3rd place in the City Python Olympiad,,achievements
+29,"Python is often used for scripting, automation, and prototyping in 3D pipelines.",,facts
+30,"Python is slower than C++ or C#, but still usable with engines like Panda3D or Ursina",,facts
+
+

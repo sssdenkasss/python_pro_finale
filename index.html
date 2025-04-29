@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>CV Denys Luchko</title>
+    <link rel="stylesheet" href ="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="main">
+        <div>
+            <h1>{{name}}</h1>
+            <h3>{{position}}</h3>
+        </div>
+        <img src="{{ url_for('static', filename='photo_2025-04-24_20-39-39.jpg') }}">
+    </div>
+    <div class="main-2">
+        <div class="left">
+            <div class="block-style contacts">
+                <h2>Contacts</h2>
+                <ul>
+                    {% for contact, link in contacts %}
+                        {% if link %}
+                            <li><a href={{link}}>{{contact}}</a></li>
+                        {%else %}
+                            <li>{{contact}}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="block-style summary">
+                <h2>Summary</h2>
+                <p>{{summary}}</p>
+            </div>
+            <div class="block-style skills">
+                <h2>Skills</h2>
+                <table>
+                    {% for i in range(0, skills|length, 2)%}
+                        <tr>
+                            {% for j in range(2) %}
+                                {% if i + j < skills|length %}
+                                    <td>{{skills[i+j]}}</td>
+                                {% else %}
+                                    <td></td>
+                                {% endif %}
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        <div class="right">
+            <div class="block-style projects">
+                <h2>Projects</h2>
+                {% for project, link in projects %}
+                    <a href={{link}}>{{project}}</a>
+                {% endfor %}
+            </div>
+            <div class="block-style education">
+                <h2>Education</h2>
+                <ul>
+                    {% for e in education%}
+                        <li>{{e}}</li>
+                    {%endfor%}
+                </ul>
+            </div>
+            <div class="block-style achievements">
+                <h2>Achievements</h2>
+                <ul>
+                    {% for achievement in achievements%}
+                        <li>{{achievement}}</li>
+                    {%endfor%}
+                </ul>
+            </div>
+            <div class="block-style facts">
+                <h2>Facts</h2>
+                <ul>
+                    {% for fact in facts%}
+                        <li>{{fact}}</li>
+                    {%endfor%}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
